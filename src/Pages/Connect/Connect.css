@@ -1,0 +1,101 @@
+.connect-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  isolation: isolate;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #212121 0%, #000000 36.25%, #252525 100%);
+  padding-inline: 20px;
+}
+.shape {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -2;
+  object-fit: cover;
+}
+.social-div-connect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  position: absolute;
+  top: 4%;
+  left: 4%;
+}
+.social-div-connect svg {
+  color: #eeeeee;
+  font-size: 25px;
+  cursor: pointer;
+  transition: all 0.23s ease-in-out;
+}
+.social-div-connect svg:hover {
+  color: var(--blue);
+}
+.overlay-connect {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  mix-blend-mode: multiply;
+  opacity: 0.5;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.connect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.connect h1 {
+  font-size: 61px;
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+}
+.p-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5px;
+  margin-top: 10px;
+}
+.connect p {
+  max-width: 1200px;
+  color: white;
+  text-align: center;
+}
+.p-wrap img {
+  margin-top: 5px;
+}
+.p-wrap p span {
+  color: var(--blue);
+  font-weight: 700;
+}
+.connect-btn {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 18px;
+  background: linear-gradient(180deg, #247aff 0%, #5972e4 100%);
+  border-radius: 16px;
+  width: 257px;
+  height: 53px;
+  border: none;
+  margin-top: 15px;
+  cursor: pointer;
+}
+@media screen and (max-width: 925px) {
+  .p-wrap br {
+    display: none;
+  }
+  .connect p {
+    font-size: 14px;
+  }
+}
