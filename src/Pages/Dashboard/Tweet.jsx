@@ -1,6 +1,9 @@
+import { CountdownCircleTimer } from "react-countdown-circle-timer";
 import "./styles/Tweet.css";
 
 const Tweet = () => {
+  const hours = 10;
+  const minutes = 40;
   return (
     <div className="token tweet">
       <h1 className="title">
@@ -28,8 +31,40 @@ const Tweet = () => {
         <div className="tweet-row">
           <h2>Until Claim Reset</h2>
           <div className="circles">
-            <div className="circle"></div>
-            <div className="circle"></div>
+            <CountdownCircleTimer
+              isPlaying
+              initialRemainingTime={hours * 3600}
+              duration={hours * 3600}
+              colors={["#247bff"]}
+              size={132}
+              strokeWidth={6}
+              trailColor={"white"}
+              rotation={"counterclockwise"}
+            >
+              {({ remainingTime }) => (
+                <div className="time">
+                  <h4>{Math.ceil(remainingTime / 3600)}</h4>
+                  <p>Hours</p>
+                </div>
+              )}
+            </CountdownCircleTimer>
+            <CountdownCircleTimer
+              isPlaying
+              initialRemainingTime={minutes * 60}
+              duration={minutes * 60}
+              colors={["#247bff"]}
+              size={132}
+              strokeWidth={6}
+              trailColor={"white"}
+              rotation={"counterclockwise"}
+            >
+              {({ remainingTime }) => (
+                <div className="time">
+                  <h4>{Math.ceil(remainingTime / 60)}</h4>
+                  <p>Minutes</p>
+                </div>
+              )}
+            </CountdownCircleTimer>
           </div>
           <div className="btn-div">
             <button className="blue-btn">

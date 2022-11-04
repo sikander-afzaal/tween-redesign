@@ -1,7 +1,7 @@
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./Header.css";
 
 const Header = () => {
@@ -9,7 +9,9 @@ const Header = () => {
   return (
     <div className="header-cont">
       <header>
-        <img src="/assets/logo-header.png" alt="" />
+        <Link to={"/dashboard"}>
+          <img src="/assets/logo-header.png" alt="" />
+        </Link>
         <div className="right-header">
           <div
             className={`overlay ${headerToggle ? "open-overlay" : ""}`}
@@ -31,15 +33,7 @@ const Header = () => {
             >
               Token
             </NavLink>
-            <NavLink
-              onClick={() => setHeaderToggle(false)}
-              to={"/dashboard/keyboard"}
-              className={({ isActive }) =>
-                isActive ? "nav-link active-link" : "nav-link"
-              }
-            >
-              Keyboard NFT
-            </NavLink>
+
             <NavLink
               onClick={() => setHeaderToggle(false)}
               to={"/dashboard/tweet"}
@@ -70,14 +64,16 @@ const Header = () => {
             <a
               onClick={() => setHeaderToggle(false)}
               className="nav-link"
-              href="#"
+              href="https://pancakeswap.finance/swap?outputCurrency=0x83Ed28Dc512265C2CE1d4f971c8BA6Ec6c8c67b0"
+              target={"blank"}
             >
               PancakeSwap
             </a>
             <a
               onClick={() => setHeaderToggle(false)}
               className="nav-link"
-              href="#"
+              href="https://tweet-to-earn.gitbook.io/tweetn"
+              target={"blank"}
             >
               Docs
             </a>

@@ -10,13 +10,13 @@ const Connect = () => {
   return (
     <div className="connect connect-wrapper">
       <div className="social-div-connect">
-        <a href="#" target={"blank"}>
+        <a href="https://twitter.com/TweetNOfficial" target={"blank"}>
           <FontAwesomeIcon icon={faTwitter} />
         </a>
-        <a href="#" target={"blank"}>
+        <a href="https://discord.com/invite/tweetn" target={"blank"}>
           <FontAwesomeIcon icon={faDiscord} />
         </a>
-        <a href="#" target={"blank"}>
+        <a href="https://t.me/TweetNOfficial" target={"blank"}>
           <FontAwesomeIcon icon={faTelegramPlane} />
         </a>
       </div>
