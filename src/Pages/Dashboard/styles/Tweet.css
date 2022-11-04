@@ -1,0 +1,145 @@
+.tweet-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  width: 100%;
+  background: #1b1b1b;
+  box-shadow: 1px 1px 42px 9px rgba(81, 80, 80, 0.25);
+  border-radius: 27px;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 20px;
+}
+.tweet-row {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  max-width: 1020px;
+}
+.tweet-row h2 {
+  font-weight: 500;
+  font-size: 32px;
+  color: #ffffff;
+}
+.reward {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 15px;
+  background: #000000;
+  border-radius: 10px;
+  height: 100px;
+}
+.reward h3 {
+  font-weight: 700;
+  font-size: 67px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.reward h3 span {
+  font-weight: 500;
+  font-size: 22px;
+  color: #ffffff;
+}
+.line {
+  height: 70%;
+  width: 2px;
+  margin: 0px 20px;
+  background-color: white;
+}
+.reward h4 {
+  font-weight: 500;
+  font-size: 22px;
+  color: var(--blue);
+}
+.circles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.circle {
+  border-radius: 50%;
+  width: 132px;
+  height: 132px;
+  border: 1px solid var(--blue);
+}
+.id-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  margin-top: 30px;
+}
+.id-row h3 {
+  color: white;
+  font-weight: 500;
+  font-size: 30px;
+}
+.id-row input {
+  background: #000000;
+  border-radius: 10px;
+  max-width: 248px;
+  width: 100%;
+  text-align: center;
+  height: 58px;
+  color: white;
+  font-weight: 700;
+  font-size: 30px;
+  border: none;
+}
+.id-row input::placeholder {
+  color: white;
+}
+.id-row input:focus {
+  outline: none;
+}
+@media screen and (max-width: 1233px) {
+  .tweet .promote-desc br {
+    display: none;
+  }
+}
+@media screen and (max-width: 1105px) {
+  .tweet-row h2 {
+    font-size: 25px;
+  }
+  .tweet-box {
+    gap: 70px;
+  }
+  .tweet-row {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 675px) {
+  .reward {
+    flex-direction: column;
+    height: auto;
+    padding-block: 15px;
+    width: 100%;
+  }
+  .reward h3 {
+    line-height: 1;
+  }
+  .line {
+    width: 100%;
+    height: 2px;
+    margin: 20px 0px;
+  }
+  .id-row {
+    flex-direction: column;
+  }
+  .id-row input {
+    max-width: 100%;
+    width: 100%;
+  }
+  .id-row h3 {
+    font-size: 25px;
+  }
+}

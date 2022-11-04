@@ -90,6 +90,9 @@
   border: none;
   margin-top: 15px;
   cursor: pointer;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
 }
 @media screen and (max-width: 925px) {
   .p-wrap br {

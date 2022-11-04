@@ -4,6 +4,7 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 import "./Connect.css";
 const Connect = () => {
   return (
@@ -34,7 +35,9 @@ const Connect = () => {
             Dapp.
           </p>
         </div>
-        <button className="connect-btn">Connect Wallet</button>
+        <Link to={"/dashboard"} className="connect-btn">
+          Connect Wallet
+        </Link>
       </div>
     </div>
   );

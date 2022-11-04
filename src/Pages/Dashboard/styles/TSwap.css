@@ -1,0 +1,32 @@
+.swap-box {
+  background: #1b1b1b;
+  box-shadow: 1px 1px 42px 9px rgba(81, 80, 80, 0.25);
+  border-radius: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  flex-direction: column;
+  width: 100%;
+  gap: 50px;
+  margin-top: 30px;
+}
+.swap-box input {
+  border: none;
+  background: #000000;
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+  height: 71px;
+  max-width: 1230px;
+  width: 100%;
+  padding-left: 20px;
+}
+.swap-box input:focus {
+  outline: none;
+}
+@media screen and (max-width: 511px) {
+  .swap-box {
+    padding-inline: 20px;
+  }
+}
